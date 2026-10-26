@@ -1,0 +1,49 @@
+[gd_scene format=3 uid="uid://bh0j1ohkcflu1"]
+
+[ext_resource type="Script" uid="uid://ch0nx5hkd0ttn" path="res://scripts/kart.gd" id="1_yjkmi"]
+[ext_resource type="PackedScene" uid="uid://bfdkrjg273eom" path="res://vehicles/models/kart.glb" id="2_cysvk"]
+[ext_resource type="Script" uid="uid://bgcypmd737540" path="res://scripts/vehicle_swap.gd" id="3_cysvk"]
+[ext_resource type="AudioStream" uid="uid://dowci3cajumxk" path="res://sound/freesound_community-engine-47745.mp3" id="4_x8h7c"]
+[ext_resource type="AudioStream" uid="uid://xc3evt56si7p" path="res://sound/universfield-double-car-honk-352443.mp3" id="5_55xdu"]
+[ext_resource type="AudioStream" uid="uid://cfamkkynedyul" path="res://sound/freesound_community-nitro-activation-48077.mp3" id="6_x8h7c"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_lxtrs"]
+size = Vector3(0.84887695, 1.1025391, 1.7339478)
+
+[node name="Kart" type="CharacterBody3D" unique_id=983446587]
+script = ExtResource("1_yjkmi")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=218618563]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.12487793, 0.57055664, 1.1294861)
+shape = SubResource("BoxShape3D_lxtrs")
+
+[node name="bodyvisual" parent="." unique_id=1069451240 instance=ExtResource("2_cysvk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1)
+
+[node name="EngineAudio" type="AudioStreamPlayer3D" parent="." unique_id=2115905083]
+stream = ExtResource("4_x8h7c")
+bus = &"SFX"
+
+[node name="HonkSFX" type="AudioStreamPlayer3D" parent="." unique_id=837175273]
+stream = ExtResource("5_55xdu")
+volume_db = 10.0
+bus = &"SFX"
+
+[node name="TurboWhoosh" type="AudioStreamPlayer3D" parent="." unique_id=2012783203]
+stream = ExtResource("6_x8h7c")
+bus = &"SFX"
+
+[node name="BoostFlame2" type="GPUParticles3D" parent="." unique_id=2069563503]
+
+[node name="VehicleSwap" type="Node3D" parent="." unique_id=1984000898]
+script = ExtResource("3_cysvk")
+
+[node name="Headlights" type="SpotLight3D" parent="." unique_id=1148119927]
+unique_name_in_owner = true
+transform = Transform3D(-1, -1.5180806e-08, 8.609462e-08, 0, 0.9848077, 0.17364818, -8.742278e-08, 0.17364818, -0.9848077, 0, 2.2994533, -1.9549432)
+light_color = Color(1, 1, 0.3764706, 1)
+light_energy = 100.0
+spot_range = 36.31387
+spot_angle = 35.0
+
+[editable path="bodyvisual"]

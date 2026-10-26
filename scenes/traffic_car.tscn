@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://ba45l34gp4m6t"]
+
+[ext_resource type="Script" uid="uid://d0alpcfhaiq03" path="res://scripts/traffic_car.gd" id="1_l7tx4"]
+
+[node name="TrafficCar" type="CharacterBody3D" unique_id=236815822]
+script = ExtResource("1_l7tx4")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1803341979]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=23737941]

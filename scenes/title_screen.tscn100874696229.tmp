@@ -1,0 +1,1158 @@
+[gd_scene format=3 uid="uid://bhna3ym3rr4ja"]
+
+[ext_resource type="Script" uid="uid://b5fyia4sjwkpb" path="res://scripts/title_screen.gd" id="1_fgkus"]
+[ext_resource type="Texture2D" uid="uid://btrl1cquh6drq" path="res://icons/garage-removebg-preview.png" id="2_3yumr"]
+[ext_resource type="Texture2D" uid="uid://dymddxa51626w" path="res://icons/pointer-removebg-preview.png" id="2_cs5ya"]
+[ext_resource type="Texture2D" uid="uid://b0m3mfk3ewail" path="res://icons/closebutton-removebg-preview.png" id="2_s4lrb"]
+[ext_resource type="AudioStream" uid="uid://ergm6dd3i843" path="res://sound/Lil Uzi Vert - Of Course We Ghetto Flowers (Official Instrumental) _ Skano.mp3" id="2_sa3yf"]
+[ext_resource type="Texture2D" uid="uid://bry2uut4yqwfp" path="res://icons/settings-removebg-preview.png" id="3_cs5ya"]
+[ext_resource type="Texture2D" uid="uid://dj1iofnqpo5hd" path="res://icons/lock-removebg-preview.png" id="3_mykxm"]
+[ext_resource type="Texture2D" uid="uid://cq53guq1un4g2" path="res://icons/howto-removebg-preview.png" id="4_mykxm"]
+[ext_resource type="Texture2D" uid="uid://dms4oucuc5ksf" path="res://icons/credits-removebg-preview.png" id="5_tklts"]
+[ext_resource type="Texture2D" uid="uid://dokhctl8us6im" path="res://icons/engine-removebg-preview.png" id="9_e8tpv"]
+[ext_resource type="Texture2D" uid="uid://dtjkcsb4v8of2" path="res://icons/upgrade-removebg-preview.png" id="9_tklts"]
+[ext_resource type="Texture2D" uid="uid://cip78yxokd0an" path="res://icons/turbo-removebg-preview.png" id="10_4qe4i"]
+[ext_resource type="Texture2D" uid="uid://dxs55fd25lwfc" path="res://icons/Screenshot_2026-07-11_141851-removebg-preview.png" id="11_p07av"]
+[ext_resource type="Texture2D" uid="uid://cd58uxh8bksmr" path="res://icons/handling-removebg-preview.png" id="12_khjys"]
+[ext_resource type="Texture2D" uid="uid://c5l7mqgojbc4c" path="res://icons/brake-removebg-preview.png" id="13_174rq"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_ob0dp"]
+sky_top_color = Color(0.563075, 0.42118704, 0.17773652, 1)
+sky_horizon_color = Color(0.7797843, 0.6197776, 0.47544318, 1)
+
+[sub_resource type="Sky" id="Sky_lxtrs"]
+sky_material = SubResource("ProceduralSkyMaterial_ob0dp")
+
+[sub_resource type="Environment" id="Environment_f5r65"]
+background_mode = 2
+sky = SubResource("Sky_lxtrs")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_sa3yf"]
+albedo_color = Color(0.20942885, 0.20942888, 0.20942888, 1)
+roughness = 0.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_l7tx4"]
+material = SubResource("StandardMaterial3D_sa3yf")
+size = Vector3(10, 0, 10)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_w8xan"]
+size = Vector3(10, 1, 10)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_tklts"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_u26n3"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ib7db"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_frs5l"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_mynnq"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_e8tpv"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_4qe4i"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_p07av"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_khjys"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_174rq"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_lrxh4"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_neciy"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_mmq4n"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_56sm2"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_rx3bg"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_w03br"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_jr68i"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_b344i"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_gm4k0"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_mce2t"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_htdhw"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mgrm8"]
+bg_color = Color(0.24695042, 0.24695024, 0.24695036, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_f5r65"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_dc4i4"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_mgrm8"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_s4lrb"]
+bg_color = Color(0.26147652, 0.26147655, 0.26147652, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_lxtrs"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_s4lrb"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_3yumr"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_sa3yf"]
+bg_color = Color(0.2936601, 0.29366007, 0.29366007, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ob0dp"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_cs5ya"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_mykxm"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cs5ya"]
+bg_color = Color(0, 0.41127303, 0.9871934, 1)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_12ga3"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_yrrko"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_aidx5"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tklts"]
+bg_color = Color(0.76304156, 0.5527459, 0.20197266, 1)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_6uh13"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_y8m2v"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_r0uj2"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_16pxe"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_dujhn"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_uapth"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_86x6n"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_i6q34"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_co0jg"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_fef8d"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_vgxrf"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_rj300"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ik0ly"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ncmrv"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_jqqpf"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ewveg"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_cjlux"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_md1t2"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4qe4i"]
+border_width_left = 10
+border_width_top = 10
+border_width_right = 10
+border_width_bottom = 10
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_vnqit"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_3fs3k"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_01qu1"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_f5r65"]
+border_width_left = 10
+border_width_top = 10
+border_width_right = 10
+border_width_bottom = 10
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_p07av"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_khjys"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_cm2a4"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_60n0v"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lxtrs"]
+border_width_left = 10
+border_width_top = 10
+border_width_right = 10
+border_width_bottom = 10
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8yi25"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_lsnn3"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_5ha7f"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xgtnn"]
+border_width_left = 10
+border_width_top = 10
+border_width_right = 10
+border_width_bottom = 10
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8kvio"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_3h2ag"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_uxpr8"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ewveg"]
+border_width_left = 10
+border_width_top = 10
+border_width_right = 10
+border_width_bottom = 10
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_h4c3t"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_2v5j3"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_knvnu"]
+
+[node name="TitleScreen" type="Control" unique_id=457096707]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_fgkus")
+rotation_speed = null
+
+[node name="Background" type="ColorRect" parent="." unique_id=989785971]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -69.0
+offset_top = -39.0
+offset_right = 1198.0
+offset_bottom = 734.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.023522846, 0.2651393, 0.74497956, 1)
+
+[node name="TitleLabel" type="Label" parent="." unique_id=662002127]
+layout_mode = 0
+offset_left = 248.0
+offset_top = -16.0
+offset_right = 886.0
+offset_bottom = 121.0
+theme_override_colors/font_color = Color(0.9180188, 0.9296064, 0.21663469, 1)
+theme_override_font_sizes/font_size = 100
+text = "DINE N DASH"
+
+[node name="SubtitleLabel" type="Label" parent="TitleLabel" unique_id=683742433]
+layout_mode = 0
+offset_left = 88.0
+offset_top = 111.0
+offset_right = 564.0
+offset_bottom = 153.0
+theme_override_colors/font_color = Color(0.99771875, 0.2954801, 0.14405334, 1)
+theme_override_font_sizes/font_size = 30
+text = "DELIVER FAST & BEAT THE CLOCK"
+
+[node name="CarPreview" type="SubViewportContainer" parent="." unique_id=1039752198]
+layout_mode = 0
+offset_left = 85.0
+offset_top = 176.0
+offset_right = 435.0
+offset_bottom = 526.0
+
+[node name="SubViewport" type="SubViewport" parent="CarPreview" unique_id=1701043564]
+handle_input_locally = false
+size = Vector2i(350, 350)
+render_target_update_mode = 4
+
+[node name="PreviewWorld" type="Node3D" parent="CarPreview/SubViewport" unique_id=270522606]
+
+[node name="Camera3D" type="Camera3D" parent="CarPreview/SubViewport/PreviewWorld" unique_id=1016224965]
+transform = Transform3D(-0.99999994, -1.2166899e-08, 8.657197e-08, 0, 0.990268, 0.13917309, -8.742277e-08, 0.13917309, -0.99026793, 0, 3, -5)
+current = true
+
+[node name="VehicleHolder" type="Node3D" parent="CarPreview/SubViewport/PreviewWorld" unique_id=1463804895]
+
+[node name="Sun" type="DirectionalLight3D" parent="CarPreview/SubViewport/PreviewWorld" unique_id=1183022389]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.4823382, 3.6294794, 1.0295832)
+light_color = Color(0.87140614, 0.62574804, 0.23307383, 1)
+light_energy = 1.5
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="CarPreview/SubViewport/PreviewWorld" unique_id=1738419115]
+environment = SubResource("Environment_f5r65")
+
+[node name="Ground" type="StaticBody3D" parent="CarPreview/SubViewport/PreviewWorld" unique_id=1277835409]
+visible = false
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="CarPreview/SubViewport/PreviewWorld/Ground" unique_id=552290712]
+mesh = SubResource("BoxMesh_l7tx4")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CarPreview/SubViewport/PreviewWorld/Ground" unique_id=1622586214]
+shape = SubResource("BoxShape3D_w8xan")
+
+[node name="UI" type="Control" parent="." unique_id=612095275]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="PlayButton" type="Button" parent="UI" unique_id=1522473574]
+layout_mode = 0
+offset_left = 538.0
+offset_top = 552.0
+offset_right = 761.0
+offset_bottom = 631.0
+theme_override_font_sizes/font_size = 40
+text = "SELECT"
+
+[node name="GarageButton" type="Button" parent="UI" unique_id=1823472049]
+custom_minimum_size = Vector2(250, 6)
+layout_mode = 0
+offset_left = 978.0
+offset_top = 7.0
+offset_right = 1531.0
+offset_bottom = 458.0
+scale = Vector2(0.2, 0.2)
+theme_override_font_sizes/font_size = 26
+theme_override_styles/normal = SubResource("StyleBoxEmpty_tklts")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_u26n3")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_ib7db")
+icon = ExtResource("2_3yumr")
+
+[node name="SettingsButton" type="Button" parent="UI" unique_id=1261108795]
+custom_minimum_size = Vector2(250, 6)
+layout_mode = 0
+offset_left = 968.0
+offset_top = 243.0
+offset_right = 1218.0
+offset_bottom = 443.0
+scale = Vector2(0.6, 0.6)
+theme_override_font_sizes/font_size = 26
+theme_override_styles/normal = SubResource("StyleBoxEmpty_frs5l")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_mynnq")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_e8tpv")
+icon = ExtResource("3_cs5ya")
+
+[node name="HowToPlayButton" type="Button" parent="UI" unique_id=1228562753]
+custom_minimum_size = Vector2(250, 6)
+layout_mode = 0
+offset_left = 964.0
+offset_top = 365.0
+offset_right = 1411.0
+offset_bottom = 812.0
+scale = Vector2(0.3, 0.3)
+theme_override_font_sizes/font_size = 26
+theme_override_styles/normal = SubResource("StyleBoxEmpty_4qe4i")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_p07av")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_khjys")
+icon = ExtResource("4_mykxm")
+
+[node name="CreditsButton" type="Button" parent="UI" unique_id=315493417]
+custom_minimum_size = Vector2(250, 6)
+layout_mode = 0
+offset_left = 980.0
+offset_top = 502.0
+offset_right = 1465.0
+offset_bottom = 914.0
+scale = Vector2(0.25, 0.25)
+theme_override_font_sizes/font_size = 26
+theme_override_styles/normal = SubResource("StyleBoxEmpty_174rq")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_lrxh4")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_neciy")
+icon = ExtResource("5_tklts")
+
+[node name="UpgradeButton" type="Button" parent="UI" unique_id=337029615]
+layout_mode = 0
+offset_left = 970.0
+offset_top = 115.0
+offset_right = 1182.0
+offset_bottom = 315.0
+scale = Vector2(0.6, 0.6)
+theme_override_styles/normal = SubResource("StyleBoxEmpty_mmq4n")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_56sm2")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_rx3bg")
+icon = ExtResource("9_tklts")
+
+[node name="HighScoreLabel" type="Label" parent="UI" unique_id=1615043442]
+layout_mode = 0
+offset_left = 497.0
+offset_top = 134.0
+offset_right = 687.0
+offset_bottom = 169.0
+theme_override_font_sizes/font_size = 25
+text = "HIGH SCORE: "
+
+[node name="CoinLabel" type="Label" parent="UI" unique_id=1537331675]
+layout_mode = 0
+offset_left = 729.0
+offset_top = 137.0
+offset_right = 968.0
+offset_bottom = 203.0
+theme_override_font_sizes/font_size = 20
+text = " "
+
+[node name="VehicleStats" type="VBoxContainer" parent="UI" unique_id=1861323307]
+layout_mode = 0
+offset_left = 500.0
+offset_top = 175.0
+offset_right = 800.0
+offset_bottom = 501.0
+
+[node name="SpeedTitle" type="Label" parent="UI/VehicleStats" unique_id=1242333024]
+layout_mode = 2
+theme_override_font_sizes/font_size = 17
+text = "TOP SPEED"
+
+[node name="SpeedBar" type="ProgressBar" parent="UI/VehicleStats" unique_id=2021350556]
+custom_minimum_size = Vector2(250, 30)
+layout_mode = 2
+value = 50.0
+show_percentage = false
+
+[node name="BoostStrengthTitle" type="Label" parent="UI/VehicleStats" unique_id=1680725304]
+layout_mode = 2
+theme_override_font_sizes/font_size = 17
+text = "BOOST POWER"
+
+[node name="BoostStrengthBar" type="ProgressBar" parent="UI/VehicleStats" unique_id=177672869]
+custom_minimum_size = Vector2(250, 30)
+layout_mode = 2
+value = 50.0
+show_percentage = false
+
+[node name="BoostRegenTitle" type="Label" parent="UI/VehicleStats" unique_id=615541562]
+layout_mode = 2
+theme_override_font_sizes/font_size = 17
+text = "BOOST REGENERATION"
+
+[node name="BoostRegenBar" type="ProgressBar" parent="UI/VehicleStats" unique_id=1648613920]
+custom_minimum_size = Vector2(250, 30)
+layout_mode = 2
+value = 50.0
+show_percentage = false
+
+[node name="HandlingTitle" type="Label" parent="UI/VehicleStats" unique_id=1939623030]
+layout_mode = 2
+theme_override_font_sizes/font_size = 17
+text = "HANDLING"
+
+[node name="HandlingBar" type="ProgressBar" parent="UI/VehicleStats" unique_id=1332790602]
+custom_minimum_size = Vector2(250, 30)
+layout_mode = 2
+value = 50.0
+show_percentage = false
+
+[node name="BrakingTitle" type="Label" parent="UI/VehicleStats" unique_id=1594423607]
+layout_mode = 2
+theme_override_font_sizes/font_size = 17
+text = "BRAKING"
+
+[node name="BrakingBar" type="ProgressBar" parent="UI/VehicleStats" unique_id=739069084]
+custom_minimum_size = Vector2(250, 30)
+layout_mode = 2
+value = 50.0
+show_percentage = false
+
+[node name="VehiclePanel" type="Control" parent="UI" unique_id=1527532874]
+anchors_preset = 0
+offset_left = 168.0
+offset_top = 231.0
+offset_right = 236.0
+offset_bottom = 281.0
+
+[node name="VehicleName" type="Label" parent="UI/VehiclePanel" unique_id=763905233]
+layout_mode = 0
+offset_left = -37.0
+offset_top = 335.0
+offset_right = 199.0
+offset_bottom = 389.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 27
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="LeftButton" type="Button" parent="UI/VehiclePanel" unique_id=632458171]
+layout_mode = 0
+offset_left = -48.0
+offset_top = 385.0
+offset_right = 399.0
+offset_bottom = 832.0
+rotation = 3.1415927
+scale = Vector2(0.15, 0.15)
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxEmpty_w03br")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_jr68i")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_b344i")
+icon = ExtResource("2_cs5ya")
+
+[node name="RightButton" type="Button" parent="UI/VehiclePanel" unique_id=963735873]
+layout_mode = 0
+offset_left = 209.0
+offset_top = 319.0
+offset_right = 656.0
+offset_bottom = 766.0
+scale = Vector2(0.15, 0.15)
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxEmpty_gm4k0")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_mce2t")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_htdhw")
+icon = ExtResource("2_cs5ya")
+
+[node name="VehicleDescription" type="Label" parent="UI/VehiclePanel" unique_id=2109332574]
+custom_minimum_size = Vector2(310, 60)
+layout_mode = 0
+offset_left = 328.0
+offset_top = 258.0
+offset_right = 638.0
+offset_bottom = 318.0
+theme_override_font_sizes/font_size = 18
+text = "TEST DESCRIPTION"
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="LockIcon" type="TextureRect" parent="UI/VehiclePanel" unique_id=869248916]
+layout_mode = 0
+offset_top = -42.0
+offset_right = 360.0
+offset_bottom = 318.0
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("3_mykxm")
+
+[node name="LockLabel" type="Label" parent="UI/VehiclePanel" unique_id=357712223]
+layout_mode = 0
+offset_left = 371.0
+offset_top = 341.0
+offset_right = 567.0
+offset_bottom = 398.0
+theme_override_font_sizes/font_size = 19
+text = "🔒 LOCKED
+Requires 25000 Score"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CreditsPanel" type="Panel" parent="UI" unique_id=1068667067]
+visible = false
+layout_mode = 0
+offset_left = 230.0
+offset_top = 70.0
+offset_right = 930.0
+offset_bottom = 570.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_mgrm8")
+
+[node name="CreditsTitle" type="Label" parent="UI/CreditsPanel" unique_id=1469089071]
+layout_mode = 0
+offset_left = 216.0
+offset_top = 5.0
+offset_right = 455.0
+offset_bottom = 88.0
+theme_override_font_sizes/font_size = 60
+text = "CREDITS"
+
+[node name="CreditsText" type="Label" parent="UI/CreditsPanel" unique_id=406608371]
+layout_mode = 0
+offset_left = 94.0
+offset_top = 79.0
+offset_right = 570.0
+offset_bottom = 496.0
+theme_override_font_sizes/font_size = 22
+text = "DASH N DINE
+
+Created by
+Nikhil Sahu
+
+Built with
+Godot Engine
+
+3D Vehicle Models
+Kenney
+
+Thanks for Playing!"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CreditsBackButton" type="Button" parent="UI/CreditsPanel" unique_id=1249497640]
+layout_mode = 0
+offset_left = 612.0
+offset_top = 2.000002
+offset_right = 1067.0
+offset_bottom = 457.0
+scale = Vector2(0.2, 0.2)
+theme_override_icons/icon = ExtResource("2_s4lrb")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_f5r65")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_dc4i4")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_mgrm8")
+icon = ExtResource("2_s4lrb")
+icon_alignment = 1
+
+[node name="SettingsPanel" type="Panel" parent="UI" unique_id=1253289756]
+layout_mode = 0
+offset_left = 230.0
+offset_top = 70.0
+offset_right = 930.0
+offset_bottom = 570.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_s4lrb")
+
+[node name="SettingsTitle" type="Label" parent="UI/SettingsPanel" unique_id=1783236340]
+layout_mode = 0
+offset_left = 215.0
+offset_top = 32.0
+offset_right = 445.0
+offset_bottom = 101.0
+theme_override_font_sizes/font_size = 50
+text = "SETTINGS"
+
+[node name="MusicLabel" type="Label" parent="UI/SettingsPanel" unique_id=1934835747]
+layout_mode = 0
+offset_left = 100.0
+offset_top = 150.0
+offset_right = 151.0
+offset_bottom = 173.0
+theme_override_font_sizes/font_size = 25
+text = "MUSIC"
+
+[node name="MusicSlider" type="HSlider" parent="UI/SettingsPanel" unique_id=412973607]
+layout_mode = 0
+offset_left = 100.0
+offset_top = 200.0
+offset_right = 600.0
+offset_bottom = 250.0
+min_value = -30.0
+max_value = 10.0
+
+[node name="SFXLabel" type="Label" parent="UI/SettingsPanel" unique_id=2000719040]
+layout_mode = 0
+offset_left = 100.0
+offset_top = 280.0
+offset_right = 158.0
+offset_bottom = 303.0
+theme_override_font_sizes/font_size = 25
+text = "SOUND"
+
+[node name="SFXSlider" type="HSlider" parent="UI/SettingsPanel" unique_id=1071633766]
+layout_mode = 0
+offset_left = 100.0
+offset_top = 330.0
+offset_right = 600.0
+offset_bottom = 380.0
+min_value = -30.0
+max_value = 10.0
+
+[node name="SettingsBackButton" type="Button" parent="UI/SettingsPanel" unique_id=247313875]
+layout_mode = 0
+offset_left = 606.0
+offset_top = 3.0
+offset_right = 1061.0
+offset_bottom = 458.0
+scale = Vector2(0.2, 0.2)
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = SubResource("StyleBoxEmpty_lxtrs")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_s4lrb")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_3yumr")
+icon = ExtResource("2_s4lrb")
+
+[node name="HowToPlayPanel" type="Panel" parent="UI" unique_id=1953464336]
+visible = false
+layout_mode = 0
+offset_left = 230.0
+offset_top = 70.0
+offset_right = 930.0
+offset_bottom = 570.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_sa3yf")
+
+[node name="HowToPlayText" type="Label" parent="UI/HowToPlayPanel" unique_id=8633670]
+layout_mode = 0
+offset_left = 96.0
+offset_top = 20.0
+offset_right = 696.0
+offset_bottom = 545.0
+theme_override_font_sizes/font_size = 28
+text = "HOW TO PLAY
+
+ARROW KEYS - Drive
+
+E - Pickup / Deliver
+
+SHIFT - Boost
+
+Deliver packages before time runs out
+
+Build combos for extra time"
+
+[node name="CloseButton" type="Button" parent="UI/HowToPlayPanel" unique_id=1201678629]
+layout_mode = 0
+offset_left = 613.0
+offset_top = 1.000001
+offset_right = 1068.0
+offset_bottom = 456.0
+scale = Vector2(0.2, 0.2)
+theme_override_colors/icon_pressed_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxEmpty_ob0dp")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_cs5ya")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_mykxm")
+icon = ExtResource("2_s4lrb")
+
+[node name="VersionLabel" type="Label" parent="UI" unique_id=1431985049]
+layout_mode = 0
+offset_left = 1030.0
+offset_top = 610.0
+offset_right = 1199.0
+offset_bottom = 645.0
+theme_override_font_sizes/font_size = 21
+text = "Version 1.0"
+
+[node name="GaragePanel" type="Panel" parent="UI" unique_id=866826642]
+visible = false
+custom_minimum_size = Vector2(1152, 648)
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 648.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_cs5ya")
+
+[node name="BackButton" type="Button" parent="UI/GaragePanel" unique_id=1555256142]
+custom_minimum_size = Vector2(250, 60)
+layout_mode = 0
+offset_left = 1050.0
+offset_top = 10.0
+offset_right = 1497.0
+offset_bottom = 457.0
+scale = Vector2(0.2, 0.2)
+theme_override_styles/normal = SubResource("StyleBoxEmpty_12ga3")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_yrrko")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_aidx5")
+icon = ExtResource("2_s4lrb")
+alignment = 0
+icon_alignment = 2
+
+[node name="GarageList" type="VBoxContainer" parent="UI/GaragePanel" unique_id=1092085761]
+layout_mode = 0
+offset_left = 100.0
+offset_top = 2.0
+offset_right = 636.0
+offset_bottom = 642.0
+theme_override_constants/separation = 20
+
+[node name="GarageTitle" type="Label" parent="UI/GaragePanel/GarageList" unique_id=778221704]
+custom_minimum_size = Vector2(200, 40)
+layout_mode = 2
+theme_override_font_sizes/font_size = 60
+text = "GARAGE"
+horizontal_alignment = 2
+vertical_alignment = 3
+
+[node name="VehicleScroll" type="ScrollContainer" parent="UI/GaragePanel/GarageList" unique_id=276489058]
+custom_minimum_size = Vector2(450, 525)
+layout_mode = 2
+
+[node name="VehicleList" type="VBoxContainer" parent="UI/GaragePanel/GarageList/VehicleScroll" unique_id=1898743775]
+custom_minimum_size = Vector2(400, 500)
+layout_mode = 2
+
+[node name="ColorList" type="VBoxContainer" parent="UI/GaragePanel" unique_id=1582334048]
+layout_mode = 0
+offset_left = 675.0
+offset_top = 79.0
+offset_right = 1025.0
+offset_bottom = 313.0
+
+[node name="WheelList" type="VBoxContainer" parent="UI/GaragePanel" unique_id=570555449]
+layout_mode = 0
+offset_left = 679.0
+offset_top = 407.0
+offset_right = 1025.0
+offset_bottom = 622.0
+
+[node name="ColorLabel" type="Label" parent="UI/GaragePanel" unique_id=1137103585]
+layout_mode = 0
+offset_left = 695.0
+offset_top = 28.0
+offset_right = 1036.0
+offset_bottom = 130.0
+theme_override_font_sizes/font_size = 35
+text = "COLOR SELECTOR"
+
+[node name="WheelLabel" type="Label" parent="UI/GaragePanel" unique_id=97564812]
+layout_mode = 0
+offset_left = 697.0
+offset_top = 354.0
+offset_right = 992.0
+offset_bottom = 403.0
+theme_override_font_sizes/font_size = 35
+text = "WHEEL SELECTOR"
+
+[node name="CarLabel" type="Label" parent="UI/GaragePanel" unique_id=386198560]
+layout_mode = 0
+offset_left = 120.0
+offset_top = 62.0
+offset_right = 437.0
+offset_bottom = 118.0
+theme_override_font_sizes/font_size = 30
+text = "VEHICLE SELECTOR"
+
+[node name="UpgradePanel" type="Panel" parent="UI" unique_id=2129422531]
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 648.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_tklts")
+
+[node name="EngineButton" type="Button" parent="UI/UpgradePanel" unique_id=579515029]
+visible = false
+layout_mode = 0
+offset_left = 601.0
+offset_top = 314.0
+offset_right = 1048.0
+offset_bottom = 761.0
+scale = Vector2(0.6, 0.6)
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = SubResource("StyleBoxEmpty_6uh13")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_y8m2v")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_r0uj2")
+icon = ExtResource("9_e8tpv")
+
+[node name="TurboButton" type="Button" parent="UI/UpgradePanel" unique_id=235520038]
+visible = false
+layout_mode = 0
+offset_left = 2.0
+offset_top = 235.0
+offset_right = 599.0
+offset_bottom = 599.0
+scale = Vector2(0.5, 0.5)
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxEmpty_16pxe")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_dujhn")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_uapth")
+icon = ExtResource("10_4qe4i")
+
+[node name="RegenButton" type="Button" parent="UI/UpgradePanel" unique_id=173504945]
+visible = false
+layout_mode = 0
+offset_left = 54.0
+offset_top = 446.0
+offset_right = 468.0
+offset_bottom = 784.0
+scale = Vector2(0.6, 0.6)
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = SubResource("StyleBoxEmpty_86x6n")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_i6q34")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_co0jg")
+icon = ExtResource("11_p07av")
+
+[node name="HandlingButton" type="Button" parent="UI/UpgradePanel" unique_id=501862827]
+visible = false
+layout_mode = 0
+offset_left = 610.0
+offset_top = 24.0
+offset_right = 1065.0
+offset_bottom = 479.0
+scale = Vector2(0.6, 0.6)
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = SubResource("StyleBoxEmpty_fef8d")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_vgxrf")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_rj300")
+icon = ExtResource("12_khjys")
+
+[node name="BrakeButton" type="Button" parent="UI/UpgradePanel" unique_id=441943276]
+visible = false
+layout_mode = 0
+offset_left = 74.0
+offset_top = 3.0
+offset_right = 285.0
+offset_bottom = 195.0
+scale = Vector2(0.9, 0.9)
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxEmpty_ik0ly")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_ncmrv")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_jqqpf")
+icon = ExtResource("13_174rq")
+
+[node name="CloseUpgradeButton" type="Button" parent="UI/UpgradePanel" unique_id=976025802]
+layout_mode = 0
+offset_left = 1029.0
+offset_top = -6.0
+offset_right = 1484.0
+offset_bottom = 449.0
+scale = Vector2(0.3, 0.3)
+theme_override_styles/normal = SubResource("StyleBoxEmpty_ewveg")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_cjlux")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_md1t2")
+icon = ExtResource("2_s4lrb")
+
+[node name="EngineCard" type="Panel" parent="UI/UpgradePanel" unique_id=749116856]
+custom_minimum_size = Vector2(50, 200)
+layout_mode = 0
+offset_left = 55.0
+offset_top = 150.0
+offset_right = 355.0
+offset_bottom = 350.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_4qe4i")
+
+[node name="EngineTitle" type="Label" parent="UI/UpgradePanel/EngineCard" unique_id=1093158980]
+layout_mode = 0
+offset_left = 23.0
+offset_top = 27.0
+offset_right = 277.0
+offset_bottom = 59.0
+theme_override_font_sizes/font_size = 25
+text = "ENGINE"
+horizontal_alignment = 1
+
+[node name="EngineLevel" type="Label" parent="UI/UpgradePanel/EngineCard" unique_id=2072911302]
+layout_mode = 0
+offset_left = 31.0
+offset_top = 70.0
+offset_right = 280.0
+offset_bottom = 104.0
+
+[node name="EngineDescription" type="Label" parent="UI/UpgradePanel/EngineCard" unique_id=276340668]
+layout_mode = 0
+offset_left = 44.0
+offset_top = 108.0
+offset_right = 237.0
+offset_bottom = 145.0
+
+[node name="EngineBuy" type="Button" parent="UI/UpgradePanel/EngineCard" unique_id=1889186611]
+layout_mode = 0
+offset_left = 217.0
+offset_top = 123.0
+offset_right = 282.0
+offset_bottom = 189.0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_vnqit")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_3fs3k")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_01qu1")
+
+[node name="TurboCard" type="Panel" parent="UI/UpgradePanel" unique_id=1105448561]
+layout_mode = 0
+offset_left = 435.0
+offset_top = 150.0
+offset_right = 735.0
+offset_bottom = 350.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_f5r65")
+
+[node name="TurboTitle" type="Label" parent="UI/UpgradePanel/TurboCard" unique_id=1322776086]
+layout_mode = 0
+offset_left = 23.0
+offset_top = 20.0
+offset_right = 284.0
+offset_bottom = 52.0
+theme_override_font_sizes/font_size = 25
+theme_override_styles/focus = SubResource("StyleBoxFlat_p07av")
+text = "TURBO"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TurboLevel" type="Label" parent="UI/UpgradePanel/TurboCard" unique_id=1369483289]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 64.0
+offset_right = 206.0
+offset_bottom = 99.0
+
+[node name="TurboDescription" type="Label" parent="UI/UpgradePanel/TurboCard" unique_id=485405447]
+layout_mode = 0
+offset_left = 31.0
+offset_top = 91.0
+offset_right = 200.0
+offset_bottom = 123.0
+
+[node name="TurboBuy" type="Button" parent="UI/UpgradePanel/TurboCard" unique_id=1938462170]
+layout_mode = 0
+offset_left = 205.0
+offset_top = 114.0
+offset_right = 283.0
+offset_bottom = 187.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_khjys")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_cm2a4")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_60n0v")
+
+[node name="RegenCard" type="Panel" parent="UI/UpgradePanel" unique_id=1467126467]
+layout_mode = 0
+offset_left = 815.0
+offset_top = 150.0
+offset_right = 1115.0
+offset_bottom = 350.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_lxtrs")
+
+[node name="NameLabel" type="Label" parent="UI/UpgradePanel/RegenCard" unique_id=614968733]
+layout_mode = 0
+offset_left = 18.0
+offset_top = 20.0
+offset_right = 273.0
+offset_bottom = 56.0
+theme_override_font_sizes/font_size = 25
+text = "REGENERATION"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="RegenLevel" type="Label" parent="UI/UpgradePanel/RegenCard" unique_id=1026789320]
+layout_mode = 0
+offset_left = 28.0
+offset_top = 65.0
+offset_right = 228.0
+offset_bottom = 88.0
+
+[node name="RegenDescription" type="Label" parent="UI/UpgradePanel/RegenCard" unique_id=1961229743]
+layout_mode = 0
+offset_left = 23.0
+offset_top = 93.0
+offset_right = 274.0
+offset_bottom = 122.0
+
+[node name="RegenBuy" type="Button" parent="UI/UpgradePanel/RegenCard" unique_id=692350381]
+layout_mode = 0
+offset_left = 221.0
+offset_top = 125.0
+offset_right = 289.0
+offset_bottom = 191.0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_8yi25")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_lsnn3")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_5ha7f")
+
+[node name="HandlingCard" type="Panel" parent="UI/UpgradePanel" unique_id=621851002]
+layout_mode = 0
+offset_left = 638.0
+offset_top = 410.0
+offset_right = 938.0
+offset_bottom = 610.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_xgtnn")
+
+[node name="HandlingTitle" type="Label" parent="UI/UpgradePanel/HandlingCard" unique_id=1384766674]
+layout_mode = 0
+offset_left = 13.0
+offset_top = 19.0
+offset_right = 285.0
+offset_bottom = 60.0
+theme_override_font_sizes/font_size = 25
+text = "HANDLING"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HandlingLevel" type="Label" parent="UI/UpgradePanel/HandlingCard" unique_id=754668740]
+layout_mode = 0
+offset_left = 18.0
+offset_top = 66.0
+offset_right = 258.0
+offset_bottom = 96.0
+
+[node name="HandlingDescription" type="Label" parent="UI/UpgradePanel/HandlingCard" unique_id=1685063532]
+layout_mode = 0
+offset_left = 13.0
+offset_top = 78.0
+offset_right = 281.0
+offset_bottom = 120.0
+
+[node name="HandlingBuy" type="Button" parent="UI/UpgradePanel/HandlingCard" unique_id=2053518385]
+layout_mode = 0
+offset_left = 219.0
+offset_top = 125.0
+offset_right = 287.0
+offset_bottom = 184.0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_8kvio")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_3h2ag")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_uxpr8")
+
+[node name="BrakesCard" type="Panel" parent="UI/UpgradePanel" unique_id=1068211303]
+layout_mode = 0
+offset_left = 228.0
+offset_top = 410.0
+offset_right = 528.0
+offset_bottom = 610.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_ewveg")
+
+[node name="BrakesTitle" type="Label" parent="UI/UpgradePanel/BrakesCard" unique_id=451582131]
+layout_mode = 0
+offset_left = 21.0
+offset_top = 19.0
+offset_right = 285.0
+offset_bottom = 56.0
+theme_override_font_sizes/font_size = 25
+text = "BRAKING"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BrakesLevel" type="Label" parent="UI/UpgradePanel/BrakesCard" unique_id=1656418171]
+layout_mode = 0
+offset_left = 18.0
+offset_top = 64.0
+offset_right = 239.0
+offset_bottom = 95.0
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BrakesDescription" type="Label" parent="UI/UpgradePanel/BrakesCard" unique_id=2107959568]
+layout_mode = 0
+offset_left = 17.0
+offset_top = 121.0
+offset_right = 258.0
+offset_bottom = 150.0
+
+[node name="BrakesBuy" type="Button" parent="UI/UpgradePanel/BrakesCard" unique_id=535305940]
+layout_mode = 0
+offset_left = 234.0
+offset_top = 146.0
+offset_right = 284.0
+offset_bottom = 188.0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_h4c3t")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_2v5j3")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_knvnu")
+
+[node name="TitleMusic" type="AudioStreamPlayer" parent="." unique_id=641623083]
+stream = ExtResource("2_sa3yf")
+autoplay = true
+bus = &"Music"
+
+[connection signal="pressed" from="UI/PlayButton" to="." method="_on_play_button_pressed"]
+[connection signal="pressed" from="UI/GarageButton" to="." method="_on_garage_button_pressed"]
+[connection signal="pressed" from="UI/SettingsButton" to="." method="_on_settings_button_pressed"]
+[connection signal="pressed" from="UI/HowToPlayButton" to="." method="_on_how_to_play_button_pressed"]
+[connection signal="pressed" from="UI/CreditsButton" to="." method="_on_credits_button_pressed"]
+[connection signal="pressed" from="UI/UpgradeButton" to="." method="_on_upgrade_button_pressed"]
+[connection signal="pressed" from="UI/VehiclePanel/LeftButton" to="." method="_on_left_button_pressed"]
+[connection signal="pressed" from="UI/VehiclePanel/RightButton" to="." method="_on_right_button_pressed"]
+[connection signal="pressed" from="UI/CreditsPanel/CreditsBackButton" to="." method="_on_credits_back_button_pressed"]
+[connection signal="value_changed" from="UI/SettingsPanel/MusicSlider" to="." method="_on_music_slider_value_changed"]
+[connection signal="value_changed" from="UI/SettingsPanel/SFXSlider" to="." method="_on_sfx_slider_value_changed"]
+[connection signal="pressed" from="UI/SettingsPanel/SettingsBackButton" to="." method="_on_settings_back_button_pressed"]
+[connection signal="pressed" from="UI/HowToPlayPanel/CloseButton" to="." method="_on_close_button_pressed"]
+[connection signal="pressed" from="UI/GaragePanel/BackButton" to="." method="_on_back_button_pressed"]
+[connection signal="pressed" from="UI/UpgradePanel/CloseUpgradeButton" to="." method="_on_close_upgrade_button_pressed"]
+[connection signal="pressed" from="UI/UpgradePanel/EngineCard/EngineBuy" to="." method="_on_buy_button_pressed"]
+[connection signal="pressed" from="UI/UpgradePanel/TurboCard/TurboBuy" to="." method="_on_buy_button_pressed"]
+[connection signal="pressed" from="UI/UpgradePanel/RegenCard/RegenBuy" to="." method="_on_buy_button_pressed"]
+[connection signal="pressed" from="UI/UpgradePanel/HandlingCard/HandlingBuy" to="." method="_on_buy_button_pressed"]
+[connection signal="pressed" from="UI/UpgradePanel/BrakesCard/BrakesBuy" to="." method="_on_buy_button_pressed"]

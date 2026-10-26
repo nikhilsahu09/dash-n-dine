@@ -1,0 +1,274 @@
+[gd_scene format=3 uid="uid://bhna3ym3rr4ja"]
+
+[ext_resource type="Script" uid="uid://b5fyia4sjwkpb" path="res://scripts/title_screen.gd" id="1_fgkus"]
+[ext_resource type="AudioStream" uid="uid://ergm6dd3i843" path="res://sound/Lil Uzi Vert - Of Course We Ghetto Flowers (Official Instrumental) _ Skano.mp3" id="2_sa3yf"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_ob0dp"]
+sky_top_color = Color(0.563075, 0.42118704, 0.17773652, 1)
+sky_horizon_color = Color(0.7797843, 0.6197776, 0.47544318, 1)
+
+[sub_resource type="Sky" id="Sky_lxtrs"]
+sky_material = SubResource("ProceduralSkyMaterial_ob0dp")
+
+[sub_resource type="Environment" id="Environment_f5r65"]
+background_mode = 2
+sky = SubResource("Sky_lxtrs")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_sa3yf"]
+albedo_color = Color(0.20942885, 0.20942888, 0.20942888, 1)
+roughness = 0.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_l7tx4"]
+material = SubResource("StandardMaterial3D_sa3yf")
+size = Vector3(10, 0, 10)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_w8xan"]
+size = Vector3(10, 1, 10)
+
+[node name="TitleScreen" type="Control" unique_id=457096707]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_fgkus")
+
+[node name="Background" type="ColorRect" parent="." unique_id=989785971]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -69.0
+offset_top = -39.0
+offset_right = 1198.0
+offset_bottom = 734.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.023522846, 0.2651393, 0.74497956, 1)
+
+[node name="TitleLabel" type="Label" parent="." unique_id=662002127]
+layout_mode = 0
+offset_left = 247.0
+offset_top = -7.0
+offset_right = 885.0
+offset_bottom = 130.0
+theme_override_colors/font_color = Color(0.9180188, 0.9296064, 0.21663469, 1)
+theme_override_font_sizes/font_size = 100
+text = "DINE N DASH"
+
+[node name="SubtitleLabel" type="Label" parent="TitleLabel" unique_id=683742433]
+layout_mode = 0
+offset_left = 91.0
+offset_top = 118.0
+offset_right = 567.0
+offset_bottom = 160.0
+theme_override_colors/font_color = Color(0.99771875, 0.2954801, 0.14405334, 1)
+theme_override_font_sizes/font_size = 30
+text = "DELIVER FAST & BEAT THE CLOCK"
+
+[node name="CarPreview" type="SubViewportContainer" parent="." unique_id=1039752198]
+layout_mode = 0
+offset_left = 85.0
+offset_top = 176.0
+offset_right = 485.0
+offset_bottom = 576.0
+
+[node name="SubViewport" type="SubViewport" parent="CarPreview" unique_id=1701043564]
+handle_input_locally = false
+size = Vector2i(400, 400)
+render_target_update_mode = 4
+
+[node name="PreviewWorld" type="Node3D" parent="CarPreview/SubViewport" unique_id=270522606]
+
+[node name="Camera3D" type="Camera3D" parent="CarPreview/SubViewport/PreviewWorld" unique_id=1016224965]
+transform = Transform3D(-0.84619313, -0.22520329, 0.48295, 0, 0.9063078, 0.42261827, -0.5328764, 0.3576167, -0.7669114, 3.6967492, 3, -5.2005444)
+current = true
+
+[node name="VehicleHolder" type="Node3D" parent="CarPreview/SubViewport/PreviewWorld" unique_id=1463804895]
+
+[node name="Sun" type="DirectionalLight3D" parent="CarPreview/SubViewport/PreviewWorld" unique_id=1183022389]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.4823382, 3.6294794, 1.0295832)
+light_color = Color(0.87140614, 0.62574804, 0.23307383, 1)
+light_energy = 1.5
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="CarPreview/SubViewport/PreviewWorld" unique_id=1738419115]
+environment = SubResource("Environment_f5r65")
+
+[node name="Ground" type="StaticBody3D" parent="CarPreview/SubViewport/PreviewWorld" unique_id=1277835409]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="CarPreview/SubViewport/PreviewWorld/Ground" unique_id=552290712]
+mesh = SubResource("BoxMesh_l7tx4")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CarPreview/SubViewport/PreviewWorld/Ground" unique_id=1622586214]
+shape = SubResource("BoxShape3D_w8xan")
+
+[node name="UI" type="Control" parent="." unique_id=612095275]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="VehiclePanel" type="Control" parent="UI" unique_id=1527532874]
+anchors_preset = 0
+offset_left = 168.0
+offset_top = 231.0
+offset_right = 236.0
+offset_bottom = 281.0
+
+[node name="VehicleName" type="Label" parent="UI/VehiclePanel" unique_id=763905233]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 353.0
+offset_right = 241.0
+offset_bottom = 407.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 30
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="LeftButton" type="Button" parent="UI/VehiclePanel" unique_id=632458171]
+layout_mode = 0
+offset_left = -81.0
+offset_top = 357.0
+offset_right = -13.0
+offset_bottom = 407.0
+theme_override_font_sizes/font_size = 30
+text = "<"
+
+[node name="RightButton" type="Button" parent="UI/VehiclePanel" unique_id=963735873]
+layout_mode = 0
+offset_left = 257.0
+offset_top = 353.0
+offset_right = 325.0
+offset_bottom = 403.0
+theme_override_font_sizes/font_size = 30
+text = ">"
+
+[node name="PlayButton" type="Button" parent="UI" unique_id=1522473574]
+layout_mode = 0
+offset_left = 564.0
+offset_top = 551.0
+offset_right = 787.0
+offset_bottom = 630.0
+theme_override_font_sizes/font_size = 40
+text = "SELECT"
+
+[node name="GarageButton" type="Button" parent="UI" unique_id=1823472049]
+custom_minimum_size = Vector2(250, 6)
+layout_mode = 0
+offset_left = 870.0
+offset_top = 350.0
+offset_right = 1120.0
+offset_bottom = 394.0
+theme_override_font_sizes/font_size = 26
+text = "GARAGE"
+
+[node name="SettingsButton" type="Button" parent="UI" unique_id=1261108795]
+custom_minimum_size = Vector2(250, 6)
+layout_mode = 0
+offset_left = 870.0
+offset_top = 410.0
+offset_right = 1120.0
+offset_bottom = 454.0
+theme_override_font_sizes/font_size = 26
+text = "SETTINGS"
+
+[node name="HowToPlayButton" type="Button" parent="UI" unique_id=1228562753]
+custom_minimum_size = Vector2(250, 6)
+layout_mode = 0
+offset_left = 870.0
+offset_top = 470.0
+offset_right = 1120.0
+offset_bottom = 514.0
+theme_override_font_sizes/font_size = 26
+text = "HOW TO PLAY"
+
+[node name="CreditsButton" type="Button" parent="UI" unique_id=315493417]
+custom_minimum_size = Vector2(250, 6)
+layout_mode = 0
+offset_left = 870.0
+offset_top = 530.0
+offset_right = 1120.0
+offset_bottom = 574.0
+theme_override_font_sizes/font_size = 26
+text = "CREDITS"
+
+[node name="VehicleStats" type="VBoxContainer" parent="UI" unique_id=1861323307]
+layout_mode = 0
+offset_left = 525.0
+offset_top = 250.0
+offset_right = 825.0
+offset_bottom = 550.0
+
+[node name="SpeedTitle" type="Label" parent="UI/VehicleStats" unique_id=1242333024]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "TOP SPEED"
+
+[node name="SpeedBar" type="ProgressBar" parent="UI/VehicleStats" unique_id=2021350556]
+custom_minimum_size = Vector2(250, 30)
+layout_mode = 2
+value = 50.0
+show_percentage = false
+
+[node name="BoostTitle" type="Label" parent="UI/VehicleStats" unique_id=1680725304]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "BOOST"
+
+[node name="BoostBar" type="ProgressBar" parent="UI/VehicleStats" unique_id=177672869]
+custom_minimum_size = Vector2(250, 30)
+layout_mode = 2
+value = 50.0
+show_percentage = false
+
+[node name="HandlingTitle" type="Label" parent="UI/VehicleStats" unique_id=1939623030]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "HANDLING"
+
+[node name="HandlingBar" type="ProgressBar" parent="UI/VehicleStats" unique_id=1332790602]
+custom_minimum_size = Vector2(250, 30)
+layout_mode = 2
+value = 50.0
+show_percentage = false
+
+[node name="BrakingTitle" type="Label" parent="UI/VehicleStats" unique_id=1594423607]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "BRAKING"
+
+[node name="BrakingBar" type="ProgressBar" parent="UI/VehicleStats" unique_id=739069084]
+custom_minimum_size = Vector2(250, 30)
+layout_mode = 2
+value = 50.0
+show_percentage = false
+
+[node name="VersionLabel" type="Label" parent="UI" unique_id=1431985049]
+layout_mode = 0
+offset_left = 984.0
+offset_top = 604.0
+offset_right = 1153.0
+offset_bottom = 639.0
+theme_override_font_sizes/font_size = 25
+text = "Version 1.0"
+
+[node name="HighScoreLabel" type="Label" parent="UI" unique_id=1615043442]
+layout_mode = 0
+offset_left = 525.0
+offset_top = 179.0
+offset_right = 694.0
+offset_bottom = 214.0
+theme_override_font_sizes/font_size = 25
+text = "HIGH SCORE: "
+
+[node name="TitleMusic" type="AudioStreamPlayer" parent="." unique_id=641623083]
+stream = ExtResource("2_sa3yf")
+volume_db = 3.0
+autoplay = true
+
+[connection signal="pressed" from="UI/VehiclePanel/LeftButton" to="." method="_on_left_button_pressed"]
+[connection signal="pressed" from="UI/VehiclePanel/RightButton" to="." method="_on_right_button_pressed"]
+[connection signal="pressed" from="UI/PlayButton" to="." method="_on_play_button_pressed"]
+[connection signal="pressed" from="UI/GarageButton" to="." method="_on_garage_button_pressed"]
+[connection signal="pressed" from="UI/SettingsButton" to="." method="_on_settings_button_pressed"]
+[connection signal="pressed" from="UI/HowToPlayButton" to="." method="_on_how_to_play_button_pressed"]
+[connection signal="pressed" from="UI/CreditsButton" to="." method="_on_credits_button_pressed"]
